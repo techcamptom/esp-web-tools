@@ -149,28 +149,25 @@
       <h1>Inventblocks Updater</h1>
       <p>
         This web-based tool updates the firmware for the Inventblocks boards.
-      </p>
-      <h2 id="demo">Update Now</h2>
-      <p>
-        This will install Inventblocks firmware. To get started, connect an Inventblocks 
-        board to your computer and hit the button for your board :
+         To get started, connect an Inventblocks board to your computer and hit the relevant button for your board.
+         You'll then be prompted to select a USB port to select to and then to install the firmware.
       </p>
       <h3>Select the button below to update your Invent ROBOT board:</h3>
-      <esp-web-install-button
-        manifest="https://raw.githubusercontent.com/techcamptom/inventblocks-flash/refs/heads/main/robot-manifest.json"
-      >
-      <h3>Select the button below to update your Invent REMOTE CONTROL board:</h3>
-      <esp-web-install-button
-        manifest="https://raw.githubusercontent.com/techcamptom/inventblocks-flash/refs/heads/main/remote-manifest.json"
-      >
+      <esp-web-install-button manifest="https://raw.githubusercontent.com/techcamptom/inventblocks-flash/refs/heads/main/robot-manifest.json">
         <i slot="unsupported">
           The demo is not available because your browser does not support Web
-          Serial. Open this page in Google Chrome or Microsoft Edge instead<span
-            class="not-supported-i hidden"
-          >
-            (but not on your iOS device)</span
-          >.
+          Serial. Open this page in Google Chrome or Microsoft Edge instead
+          <span class="not-supported-i hidden">(but not on your iOS device)</span>.
         </i>
+      </esp-web-install-button>  
+      <h3>Select the button below to update your Invent REMOTE CONTROL board:</h3>
+      <esp-web-install-button manifest="https://raw.githubusercontent.com/techcamptom/inventblocks-flash/refs/heads/main/remote-manifest.json">
+        <i slot="unsupported">
+          The demo is not available because your browser does not support Web
+          Serial. Open this page in Google Chrome or Microsoft Edge instead
+          <span class="not-supported-i hidden">(but not on your iOS device)</span>.
+        </i>
+      </esp-web-install-button>
       <div class="footer">
         <div class="initiative">
           ESP Web Tools is a project by
